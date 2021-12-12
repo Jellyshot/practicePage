@@ -8,11 +8,21 @@
     <title>Photoshot</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <script defer src="/js/main.js"></script>
+    <nav>
+            <input type="text" id="search-txt" name="" placeholder="Search">
+            <a class="search-btn" href="#">
+                <button onclick="myFunction()" class="btn"><i class="fa fa-search"></i></button>
+            </a>
+        <button class="btn"><i class="fa fa-bars"></i></button>
+    </nav>
     <header>
         <h1>&PhotoShot</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni eligendi at iste perspiciatis est unde
@@ -24,13 +34,13 @@
     </header>
     <div class="row">
         <div class="coloum">
-            <a href="#">
+            <a href="http://127.0.0.1:5500/category.html#">
                 <img src="/img/star-g53ab2e352_1920.jpg" alt="star.jpg">
                 <div class="text">Landscape</div>
             </a>
             <a href="#">
                 <img src="/img/adorable-dog4963bc0fd_1920.jpg" alt="dog.jpg">
-                <div class="text">Animal</div>
+                <div class="text" id="animal">Animal</div>
             </a>
             <a href="#">
                 <img src="/img/berlin-gc27475491_1280.jpg" alt="structure.jpg">
@@ -50,12 +60,12 @@
                 <img src="/img/outdoor-dining-g770d860bc_1920.jpg" alt="street.jpg">
                 <div class="text">Streets</div>
             </a>
-            
+
         </div>
         <div class="coloum">
             <a href="#">
                 <img src="/img/wedding.jpg" alt="wedding.jpg">
-                <div class="text">Streets</div>
+                <div class="text">Wedding</div>
             </a>
             <a href="#">
                 <img src="/img/asdfasdf.jpg" alt="outdoor">
@@ -63,9 +73,9 @@
             </a>
             <a href="#">
                 <img src="/img/covid-19-g98f2b1f12_1280.jpg" alt=".etc">
-                <div class="text">.etc</div>
+                <div class="text" id="etc">.etc</div>
             </a>
-            
+
         </div>
     </div>
 </body>

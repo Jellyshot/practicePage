@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --darkblack-color:#212121;
+    --lightblack-color:#484848;
+    --lightgray-color:#cfcfcf;
+    --gray-color:#9e9e9e;
+    --darkgray-color:#707070;
+    --main-padding: 14px 16px
+}
+body, html{
+    background-color: var(--darkblack-color);
+}
+.nav{
+    width: 100%;
+    padding-right: 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+#search-txt{
+    float: right;
+    display:none;
+    margin-top: 10px;
+}
+.btn {
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: white;
+    /* 버튼색이 안먹는이유? */
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.fa {
+    color: white;
+}
+/* 아이콘 색이 안먹어! */
+header{
+    margin: 16px 0;
+    color: var(--lightgray-color);
+    text-align: center;
+    margin: 20px;
+    padding: var(--main-padding);
+}
+h2{
+    font-size: 40px;
+
+}
+section{
+    display: flex;
+    max-height: 500px;
+    justify-content: space-between;
+    /* border: 2px solid var(--gray-color); */
+}
+.profile{
+    color: var(--lightgray-color);
+    text-align: center;
+    font-size: 2em;
+    /* border: 1px solid var(--gray-color); */
+    margin: 5px;
+    background-color: var(--lightblack-color);
+}
+
+.avatar{
+    border: 5px solid var(--lightgray-color);
+    vertical-align: middle;
+    /* border-radius: 50%; */
+    width: 250px;
+    height: 250px;
+    margin: 20px 20px 10px 20px;
+}
+.contents{
+    display: flex;
+    align-items: center;
+    background-color: var(--lightblack-color);
+    margin: 5px 5px 5px 15px
+}
+article{
+    padding: 10px;
+    /* background-color: var(--gray-color); */
+    float: right;
+}
+article img {
+    height: 300px;
+    width: 500px;
+    border: 1px solid var(--darkblack-color);
+}
+@media screen and (max-width:700px){
+    .profile{
+        display:none;
+    }
+    .contents{
+       display: block;
+        align-items: center;
+        margin: 5px;
+        background-color: transparent;
+    }
+    section{
+        display: block;
+    }
+
+    article{
+        float: left;
+        padding: 20px;
+        float: left;
+    }
+    article img {
+        height: 100%;
+        width: 100%;
+    }
+    section{
+    height: auto;    }
+}
