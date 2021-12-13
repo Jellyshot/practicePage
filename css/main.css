@@ -17,7 +17,7 @@ body, html{
     background-color: var(--darkblack-color);
 }
 nav{
-   float: right;
+    float: right;
     padding-right: 10px;
     overflow: hidden;
 }

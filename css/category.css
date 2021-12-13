@@ -15,54 +15,50 @@
 body, html{
     background-color: var(--darkblack-color);
 }
-.nav{
-    width: 100%;
+nav{
+    float: right;
     padding-right: 10px;
     overflow: hidden;
-    display: inline-block;
 }
 #search-txt{
-    float: right;
+    float: left;
     display:none;
     margin-top: 10px;
 }
 .btn {
-    float: right;
+    float: left;
     background-color: transparent;
     border: none;
     color: white;
-    /* 버튼색이 안먹는이유? */
     padding: 12px 16px;
     font-size: 16px;
     cursor: pointer;
 }
-.fa {
-    color: white;
-}
-/* 아이콘 색이 안먹어! */
 header{
-    margin: 16px 0;
+    padding: 14px 80px;
     color: var(--lightgray-color);
     text-align: center;
-    margin: 20px;
-    padding: var(--main-padding);
+    font-size: larger;
+    margin-top: 20px;
 }
 h2{
     font-size: 40px;
 
 }
+.main{
+    margin-top: 40px;
+    width: 95%;
+}
 section{
     display: flex;
     max-height: 500px;
-    justify-content: space-between;
-    /* border: 2px solid var(--gray-color); */
+    flex-grow: 1fr 6fr;
 }
 .profile{
     color: var(--lightgray-color);
     text-align: center;
     font-size: 2em;
-    /* border: 1px solid var(--gray-color); */
-    margin: 5px;
+    margin: 10px 10px 10px 30px;
     background-color: var(--lightblack-color);
 }
 
@@ -72,13 +68,13 @@ section{
     /* border-radius: 50%; */
     width: 250px;
     height: 250px;
-    margin: 20px 20px 10px 20px;
+    margin: 30px 20px 20px 20px;
 }
 .contents{
     display: flex;
     align-items: center;
     background-color: var(--lightblack-color);
-    margin: 5px 5px 5px 15px
+    margin: 10px 10px 10px 20px
 }
 article{
     padding: 10px;
@@ -86,9 +82,12 @@ article{
     float: right;
 }
 article img {
-    height: 300px;
-    width: 500px;
+    height: 400px;
+    width: 700px;
     border: 1px solid var(--darkblack-color);
+}
+article img:hover {
+    opacity: 0.4;
 }
 @media screen and (max-width:700px){
     .profile{
