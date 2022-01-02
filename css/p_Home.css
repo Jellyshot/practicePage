@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--darkblack-color);
 }
 :root{
     --darkblack-color:#212121;
@@ -12,20 +13,19 @@
     --darkgray-color:#707070;
     --main-padding: 14px 16px
 }
-body, html{
-    background-color: var(--darkblack-color);
-}
 header{
     font-size: 50px;
     word-break: break-all;
     color: var(--lightgray-color);
     text-align: center;
     padding: var(--main-padding);
+    border: 1px solid lightblue;
 }
 nav{
     float: right;
     padding-right: 10px;
     overflow: hidden;
+    border: 1px solid lightgreen;
 }
 #search-txt{
     float: left;
@@ -42,19 +42,26 @@ nav{
     cursor: pointer;
   }
 .profile{
+    display: inline-block;
     margin-top: 80px;
     overflow: hidden;
     width: 100%;
     padding: 14px;
+    border: 1px solid lightyellow;
 }
 .avatar {
-    float: left;
+    width: 20%;
     padding: 10px;
+    max-width: 250px;
     background-color: var(--lightblack-color);
+    float: left;
+    border: 1px solid orange;
 }
-.avatar img{
+.avatar .icon img{
+    margin: 5px;
     height: 200px;
-    width: 200px;
+    width: 95%;
+    max-width: 200px;
     border-radius: 50%;
 }
 .avatar li{
@@ -62,10 +69,11 @@ nav{
     list-style: none;
     color: var(--lightgray-color);
 }
+
 .info button {
     border: none;
     outline: 0;
-    display: inline-block;
+    /* display: inline-block; */
     padding: 8px;
     color: var(--darkblack-color);
     background-color: var(--lightgray-color);
@@ -75,10 +83,12 @@ nav{
     width: 100%;
 }
 .intro{
+    width: 75%;
     color: var(--lightgray-color);
-    float: left;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     font-size: larger;
+    float: left;
+    border: 1px solid pink;
 }
 .intro h2{
     margin-bottom: 10px;
